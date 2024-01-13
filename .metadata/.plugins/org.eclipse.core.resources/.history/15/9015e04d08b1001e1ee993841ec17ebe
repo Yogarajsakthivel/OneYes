@@ -1,0 +1,173 @@
+package com.example.demo.serviceimpl;
+
+
+	public int Plumberv()
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int shower = 500;
+		
+		System.out.println("Enter the  no of shower :");
+		
+		int sr = sc.nextInt() * shower;
+		
+		int pipes = 200;
+		
+		System.out.println("Enter the  no of pipes :");
+		
+		int ps = sc.nextInt() * pipes;
+		
+		int sink = 750;
+		
+		System.out.println("Enter the  no of Sink :");
+		
+		int sk = sc.nextInt() * sink;
+		
+		int washbasin = 600;
+		
+		System.out.println("Enter the no of Washbasin :");
+		
+		int wn = sc.nextInt();
+		
+		
+		int PlumberCost = sr+ps+sk+wn ;
+		
+		
+		System.out.println();
+		
+		
+		return PlumberCost ;
+		
+		
+			
+	}
+	
+	
+	public int Electric()
+	{
+
+		Scanner sc = new Scanner(System.in);
+		
+		int Pvcpipe = 40;
+		
+		System.out.println("Enter the  no of PVCPipe :");
+		
+		int pp = sc.nextInt() * Pvcpipe;
+		
+		
+		int Wire = 30;
+		
+		System.out.println("Enter the  no of Wire :");
+		
+		int we = sc.nextInt() *Wire;
+		
+		int Bulb = 50;
+		
+		System.out.println("Enter the  no of Bulb :");
+		
+		int bb = sc.nextInt() * Bulb ;
+		
+		
+		int Switch = 80;
+		
+		System.out.println("Enter the no of Switch :");
+		
+		int sh = sc.nextInt() * Switch;
+		
+		
+		int ElectricalCost = pp+we+bb+sh;
+		
+		return ElectricalCost;
+		
+	}
+	
+	
+	public int Labour()
+	
+	
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int Engineer = 2500;
+		
+	System.out.println("Enter the  no of Engineer :");
+		
+		int er = sc.nextInt() * Engineer;
+		
+		int Mason = 600;
+		
+		System.out.println("Enter the  no of Mason :");
+		
+		int mn = sc.nextInt()* Mason;
+		
+		int Chital = 800;
+		
+		System.out.println("Enter the  no of Chital :");
+		
+		int cr = sc.nextInt() * Chital;
+		
+		int LabourCost = er + mn + cr;
+		
+	 return LabourCost;
+		
+	}
+	
+	
+public int Material()
+	
+	
+	{
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int Tiles = 80;
+		
+	System.out.println("Enter the  no of Tiles :");
+		
+		int ts = sc.nextInt() *Tiles;
+		
+		int Sement = 80;
+		
+		System.out.println("Enter the  no of Sement :");
+		
+		
+		int st = sc.nextInt() * Sement;
+		
+		int Brick = 90;
+		
+		System.out.println("Enter the  no of Brick :");
+		
+		int bk = sc.nextInt()*Brick;
+		
+		int Steel = 110;
+		
+
+		System.out.println("Enter the  no of Steel :");
+		
+		int sl = sc.nextInt()*Steel;
+		
+	
+		int MaterialCost = ts+st+bk+sl;
+		
+		return MaterialCost;
+		
+	}
+
+
+public static void main (String args[])
+{
+	Pulmber pc = new Pulmber();
+	
+	pc.Plumberv();
+	
+	
+	pc.Electric();
+	pc.Labour();
+	pc.Material();
+}
+	
+}
+
+

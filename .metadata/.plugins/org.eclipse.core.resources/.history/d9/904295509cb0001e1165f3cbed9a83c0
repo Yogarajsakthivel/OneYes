@@ -1,0 +1,44 @@
+package com.example.demo.controller;
+
+import java.util.List;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.model.Estimate;
+import com.example.demo.service.EstimateService;
+
+@RestController
+
+@RequestMapping("/api/estimate")
+
+
+public class EstimateController {
+
+	private final EstimateService estimateService;
+
+    
+    public EstimateController(EstimateService estimateService) {
+        this.estimateService = estimateService;
+    }
+
+    @GetMapping
+    
+    public List<Estimate> getAllEstimates() 
+    {
+        return estimateService.findAll();
+    }
+    
+    @PostMapping("/add")
+    
+    public Estimate addEstimate(@RequestBody Estimate estimate)
+    {
+        estimateService.addEstimate(estimate);
+		return estimate;
+    }
+	
+}

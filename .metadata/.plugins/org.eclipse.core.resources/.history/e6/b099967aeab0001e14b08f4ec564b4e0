@@ -1,0 +1,71 @@
+package com.example.demo.model;
+
+import org.springframework.data.relational.core.mapping.Column;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "estimatecost")
+public class Estimate {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String ProjectId;
+    private String ProjectName;
+    private String Plumber;
+    private String Labour;
+    private String Material;
+    private String Electrician;
+    
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getProjectId() {
+		return ProjectId;
+	}
+	public void setProjectId(String projectId) {
+		ProjectId = projectId;
+	}
+	public String getProjectName() {
+		return ProjectName;
+	}
+	public void setProjectName(String projectName) {
+		ProjectName = projectName;
+	}
+	public String getPlumber() {
+		return Plumber;
+	}
+	public void setPlumber(String plumber) {
+		Plumber = plumber;
+	}
+	public String getLabour() {
+		return Labour;
+	}
+	public void setLabour(String labour) {
+		Labour = labour;
+	}
+	public String getMaterial() {
+		return Material;
+	}
+	public void setMaterial(String material) {
+		Material = material;
+	}
+	public String getElectrician() {
+		return Electrician;
+	}
+	public void setElectrician(String electrician) {
+		Electrician = electrician;
+	}
+	
+    
+ 
+
+}

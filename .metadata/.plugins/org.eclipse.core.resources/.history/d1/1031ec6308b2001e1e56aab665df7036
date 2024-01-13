@@ -1,0 +1,65 @@
+package com.example.demo.model;
+
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "estimatecost")
+public class Estimate {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    private int id; 
+    private String Kitchen_Expense;
+    private String Bedroom_Expense;
+    private String Washroom_Expense;
+    private String Hall_Expense;
+    private String Total_Expense;
+    public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getKitchen_Expense() {
+		return Kitchen_Expense;
+	}
+	public void setKitchen_Expense(String kitchen_Expense) {
+		Kitchen_Expense = kitchen_Expense;
+	}
+	public String getBedroom_Expense() {
+		return Bedroom_Expense;
+	}
+	public void setBedroom_Expense(String bedroom_Expense) {
+		Bedroom_Expense = bedroom_Expense;
+	}
+	public String getWashroom_Expense() {
+		return Washroom_Expense;
+	}
+	public void setWashroom_Expense(String washroom_Expense) {
+		Washroom_Expense = washroom_Expense;
+	}
+	public String getHall_Expense() {
+		return Hall_Expense;
+	}
+	public void setHall_Expense(String hall_Expense) {
+		Hall_Expense = hall_Expense;
+	}
+	public String getTotal_Expense() {
+		return Total_Expense;
+	}
+	public void setTotal_Expense(String total_Expense) {
+		Total_Expense = total_Expense;
+	}
+	
+	
+    
+	
+
+}

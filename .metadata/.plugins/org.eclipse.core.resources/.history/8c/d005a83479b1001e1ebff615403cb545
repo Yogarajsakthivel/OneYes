@@ -1,0 +1,109 @@
+package com.example.demo.model;
+
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "estimatecost")
+public class Estimate {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id; 
+	private String Projectid;
+    private String Projectname;
+    private String Plumber;
+    private String Labour;
+    private String Material;
+    private String Electrician;
+    
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	 public String getProjectid() {
+			return Projectid;
+		}
+		public void setProjectid(String projectid) {
+			Projectid = projectid;
+		}
+		public String getProjectname() {
+			return Projectname;
+		}
+		public void setProjectname(String projectname) {
+			Projectname = projectname;
+		}
+	
+	public String getPlumber() {
+		return Plumber;
+	}
+	public void setPlumber(String plumber) {
+		Plumber = plumber;
+	}
+	public String getLabour() {
+		return Labour;
+	}
+	public void setLabour(String labour) {
+		Labour = labour;
+	}
+	public String getMaterial() {
+		return Material;
+	}
+	public void setMaterial(String material) {
+		Material = material;
+	}
+	public String getElectrician() {
+		return Electrician;
+	}
+	public void setElectrician(String electrician) {
+		Electrician = electrician;
+	}
+	public Object getYourField() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setYourField(Object yourField) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+//    public void Plumbercost()
+//    {
+//    	int shower = 50;
+//    	int pipe = 30;
+//    	int sink = 400;
+//    	int washbasin = 800;
+//   
+//    
+//    }
+// 
+//    public void  Electriciancost()
+//    {
+//    	int Pvcpipe = 240;
+//    	int wire = 120;
+//    	int Bulb = 50;
+//    	int Switch = 80;
+//    }
+//    
+//    public void  Materialcost()
+//    {
+//    	int Bricks = 260;
+//    	int Tiles = 200;
+//    	int Sement = 500;
+//    	int Steel = 180;
+//    }
+//    public void LabourCost()
+//    {
+//    	int Engineer = 2500;
+//    	int Mason = 600;
+//    	int Chital = 300;
+//    }
+
+}

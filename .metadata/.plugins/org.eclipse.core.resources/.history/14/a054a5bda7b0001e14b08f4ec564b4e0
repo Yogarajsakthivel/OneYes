@@ -1,0 +1,57 @@
+package com.example.demo.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+
+@Table (name="estimatecost")
+
+public class Estimate {
+
+@Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+
+	private int id ;
+	private int PlumberCost;
+	private int ElectricianCost;
+	private int LabourCost;
+	private int MaterialCost;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getPlumberCost() {
+		return PlumberCost;
+	}
+	public void setPlumberCost(int plumberCost) {
+		PlumberCost = plumberCost;
+	}
+	public int getElectricianCost() {
+		return ElectricianCost;
+	}
+	public void setElectricianCost(int electricianCost) {
+		ElectricianCost = electricianCost;
+	}
+	public int getLabourCost() {
+		return LabourCost;
+	}
+	public void setLabourCost(int labourCost) {
+		LabourCost = labourCost;
+	}
+	public int getMaterialCost() {
+		return MaterialCost;
+	}
+	public void setMaterialCost(int materialCost) {
+		MaterialCost = materialCost;
+	}
+
+	
+}

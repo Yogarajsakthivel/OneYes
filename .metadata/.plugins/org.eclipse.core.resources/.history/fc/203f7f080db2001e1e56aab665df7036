@@ -1,0 +1,11 @@
+package com.example.demo.payload;
+
+public class EstimatePayload {
+
+	
+	public int k_sqt;
+	public int b_sqt;
+	public int w_sqt;
+	public int h_sqt;
+	
+}
